@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿//SourceFileName : GameOverMenu.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Sep.18, 2020
+//Program description : fuctions of game over menu such as going to mainmenu or playing again level
+//Revision History : Sep.18, 2020 Adding PlayAgain and BackToMainMenu function
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

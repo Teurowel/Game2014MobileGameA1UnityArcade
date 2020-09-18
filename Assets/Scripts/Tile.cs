@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿//SourceFileName : Tile.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Sep.18, 2020
+//Program description : fuctions of tile
+//Revision History : Sep.18, 2020 Adding OnMouseDOwn funtion
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
