@@ -11,6 +11,9 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    Tower towerOnTile = null; //Tower that is currently placed on this tile
+    public float towerYOffset = 3f; //When place tower, set offset to adjust position
+
     //// Start is called before the first frame update
     //void Start()
     //{
@@ -25,6 +28,15 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log(transform.name);
+        //When player select tile, place tower
+        if(TowerListPanel.instance.selectedTowerSlot != null && towerOnTile == null)
+        {
+            Vector3 towerPos = transform.position;
+            towerPos.y += towerYOffset;
+
+            GameObject tower = Instantiate(TowerListPanel.instance.selectedTowerSlot.towerData.towerPrefab, towerPos, Quaternion.identity);
+            towerOnTile = tower.GetComponent<Tower>();
+        }
+        //Debug.Log(transform.name);
     }
 }

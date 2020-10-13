@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8316199d38f064794857accd86cffd, type: 3}
+  m_Name: SunFlowerTowerData
+  m_EditorClassIdentifier: 
+  towerName: SunFlower
+  towerIcon: {fileID: -218745708434738110, guid: 343b6d6c9a26b5545b292d5dfc8bbc69, type: 3}
+  towerCost: 10
+  towerPrefab: {fileID: 6661317319263458469, guid: a710bd861660acc4688c8255cdc95bef, type: 3}
