@@ -46,9 +46,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   damage: 10
+  attackPerSec: 1
+  maxNumOfProjectile: 10
+  attackRange: 10
+  projectilePrefab: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  rayCastYOffset: 0.5
+  projectileSpawnXOffset: 3
   sunPrefab: {fileID: 4808307853876473547, guid: 3c2d6544d09cc5e408d28dab1b08c423, type: 3}
   sunSpawnYOffset: 1
-  sunSpawnCoolTime: 5
+  sunSpawnCoolTime: 10
 --- !u!1 &7347150047945752581
 GameObject:
   m_ObjectHideFlags: 0
