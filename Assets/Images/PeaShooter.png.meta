@@ -46,7 +46,7 @@ TextureImporter:
     second: PeaShooter_13
   - first:
       213: 326594456143749878
-    second: PeaShooter_14
+    second: PeaShooter_12
   - first:
       213: -1086486587866892848
     second: PeaShooter_15
@@ -412,7 +412,7 @@ TextureImporter:
         width: 24
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,6 +420,69 @@ TextureImporter:
       bones: []
       spriteID: c5809f42acd3ec500800000000000000
       internalID: 418339753805023324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PeaShooter_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 8
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b621a032af89dad60800000000000000
+      internalID: 7903141121202197099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PeaShooter_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 10
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324b939db74c687f0800000000000000
+      internalID: -610584663257664477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PeaShooter_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f26f007deb488400800000000000000
+      internalID: 326594456143749878
       vertices: []
       indices: 
       edges: []

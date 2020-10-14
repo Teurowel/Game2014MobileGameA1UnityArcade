@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Tile
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 3008255033
+    locked: 0
+  - name: Projectile
+    uniqueID: 2872288069
     locked: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6542779044631829137}
   - component: {fileID: 6542779044631829136}
   - component: {fileID: 6542779044631829139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZombieGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 495215555
-  m_SortingLayer: 1
+  m_SortingLayerID: -1763235911
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4954422511873680816, guid: 9e7583fde01e1244ba3cd6f63655b121, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,7 +111,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7582801502068222736}
-  m_Layer: 0
+  - component: {fileID: 4401104500589823436}
+  m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,3 +134,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &4401104500589823436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582801502068222737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06540942, y: 0.62716436}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28933573, y: 0.9412832}
+  m_EdgeRadius: 0

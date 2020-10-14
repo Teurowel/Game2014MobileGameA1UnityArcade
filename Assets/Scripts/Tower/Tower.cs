@@ -1,5 +1,5 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -9,8 +9,18 @@ public class Tower : MonoBehaviour
     [SerializeField] protected int maxHp = 100; //Max health point for tower;
     [SerializeField] protected int damage = 10; //Attack damage
     [SerializeField] protected float attackPerSec = 1; //attack every seconds
-
+    [SerializeField] protected int maxNumOfProjectile = 10; //Number of projectile pool
+    [SerializeField] protected float attackRange = 10f; //Attack range
+    
     protected bool hasAttacked = false; //Did tower attack?
+
+    [Header("Projectile")]
+    [SerializeField] protected GameObject projectilePrefab = null; //Projectile prefab
+    protected Queue<GameObject> projectilePool = null; //Projectile pool
+    [SerializeField] protected LayerMask enemyLayer; //Which layer tower atatck
+    [SerializeField] protected float rayCastYOffset = 0.5f; //Y offset for ray cast start pos
+    [SerializeField] protected float projectileSpawnXOffset = 3f; //X Offset where projectile spawn
+
 
     // Start is called before the first frame update
     void Start()
