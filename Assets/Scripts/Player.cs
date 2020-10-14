@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
 
     [SerializeField] int sunScore = 100; //This will be used to place tower
 
+    public delegate void OnSunScoreChange(int _sunScore); //delegate for sun score change
+    public OnSunScoreChange onSunScoreChange; //Sun score text subscribe 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +55,8 @@ public class Player : MonoBehaviour
     public void ChangeSunScore(int value)
     {
         sunScore += value;
+
+        onSunScoreChange.Invoke(sunScore);
     }
 
     public int GetSunScore()
