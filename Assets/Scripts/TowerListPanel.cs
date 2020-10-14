@@ -40,7 +40,7 @@ public class TowerListPanel : MonoBehaviour
     public void SetSelectedTowerSlot(TowerSlot newSlot)
     {
         //If selectedTowerSlot is empty and is different from new slot, just set new slot
-        if (selectedTowerSlot == null && selectedTowerSlot != newSlot)
+        if (selectedTowerSlot == null || selectedTowerSlot != newSlot)
         {
             selectedTowerSlot = newSlot;
 

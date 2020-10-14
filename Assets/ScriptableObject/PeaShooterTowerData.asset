@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8316199d38f064794857accd86cffd, type: 3}
+  m_Name: PeaShooterTowerData
+  m_EditorClassIdentifier: 
+  towerName: PeaShooter
+  towerIcon: {fileID: 418339753805023324, guid: 3eb4f2fcbf8cd154f860d03e453abc03, type: 3}
+  towerCost: 100
+  towerPrefab: {fileID: 2908111109901878494, guid: f6efe6b5022e29e4eb44b0e4109a942e, type: 3}
