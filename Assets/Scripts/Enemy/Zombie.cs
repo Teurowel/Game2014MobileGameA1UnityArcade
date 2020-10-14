@@ -13,7 +13,7 @@ public class Zombie : Enemy
     // Update is called once per frame
     protected override void Update()
     {
-        Debug.Log("Zombie update");
+        //Debug.Log("Zombie update");
         base.Update();
     }
 }

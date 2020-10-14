@@ -145,7 +145,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06540942, y: 0.62716436}
@@ -176,4 +176,4 @@ MonoBehaviour:
   hp: 100
   maxHp: 100
   damage: 10
-  moveSpeed: 1
+  moveSpeed: 0.5

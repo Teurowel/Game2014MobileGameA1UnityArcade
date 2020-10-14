@@ -98,6 +98,7 @@ public class Tower_PeaShooter : Tower
             if (projComp != null)
             {
                 projComp.SetOwner(this);
+                projComp.SetDamage(damage);
             }
         }
     }

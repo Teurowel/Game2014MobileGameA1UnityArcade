@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
-  damage: 10
+  damage: 20
   attackPerSec: 1
   maxNumOfProjectile: 10
   attackRange: 8

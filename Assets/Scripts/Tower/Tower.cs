@@ -41,4 +41,11 @@ public class Tower : MonoBehaviour
     {
         Debug.Log("Tower base DoJob");
     }
+
+    //Get projectile and put it in queue
+    public void ReturnProjectile(GameObject projectile)
+    {
+        projectile.SetActive(false);
+        projectilePool.Enqueue(projectile);
+    }
 }
