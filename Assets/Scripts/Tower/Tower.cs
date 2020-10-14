@@ -6,8 +6,11 @@ public class Tower : MonoBehaviour
 {
     [Header("Stats")]
     int hp = 100; //Health Point for tower
-    [SerializeField] int maxHp = 100; //Max health point for tower;
-    [SerializeField] int damage = 10; //Attack damage
+    [SerializeField] protected int maxHp = 100; //Max health point for tower;
+    [SerializeField] protected int damage = 10; //Attack damage
+    [SerializeField] protected float attackPerSec = 1; //attack every seconds
+
+    protected bool hasAttacked = false; //Did tower attack?
 
     // Start is called before the first frame update
     void Start()
