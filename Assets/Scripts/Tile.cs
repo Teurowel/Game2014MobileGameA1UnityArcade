@@ -36,6 +36,9 @@ public class Tile : MonoBehaviour
 
             GameObject tower = Instantiate(TowerListPanel.instance.selectedTowerSlot.towerData.towerPrefab, towerPos, Quaternion.identity);
             towerOnTile = tower.GetComponent<Tower>();
+
+            //Deslect tower slot
+            TowerListPanel.instance.DeselectTowerSlot();
         }
         //Debug.Log(transform.name);
     }

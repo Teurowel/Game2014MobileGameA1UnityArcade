@@ -50,9 +50,13 @@ public class TowerListPanel : MonoBehaviour
         //If selected tower slot is the same as newSlot, unselect it
         else if (selectedTowerSlot == newSlot)
         {
-            selectedTowerSlot = null;
-
-            selectedSlotHighlight.SetActive(false);
+            DeselectTowerSlot();
         }
+    }
+
+    public void DeselectTowerSlot()
+    {
+        selectedTowerSlot = null;
+        selectedSlotHighlight.SetActive(false);
     }
 }
