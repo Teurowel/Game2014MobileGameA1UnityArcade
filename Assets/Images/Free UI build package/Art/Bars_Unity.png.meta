@@ -687,12 +687,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 51
+        y: 52
         width: 94
-        height: 94
+        height: 92
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 12, y: 12, z: 12, w: 11}
       outline: []
       physicsShape: []
       tessellationDetail: 0

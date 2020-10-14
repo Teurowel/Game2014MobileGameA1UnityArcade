@@ -20,13 +20,16 @@ public class TowerListPanel : MonoBehaviour
     #endregion
 
     public TowerSlot selectedTowerSlot = null; //Which tower is selected now
+    public GameObject selectedSlotHighlight = null; //Image to highlight selected tower slot
 
-
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
+    // Start is called before the first frame update
+    void Start()
+    {
+        if(selectedSlotHighlight != null)
+        {
+            selectedSlotHighlight.SetActive(false);
+        }
+    }
 
     //// Update is called once per frame
     //void Update()
@@ -36,20 +39,20 @@ public class TowerListPanel : MonoBehaviour
 
     public void SetSelectedTowerSlot(TowerSlot newSlot)
     {
-        //If selectedTowerSlot is empty, just set new slot
-        if (selectedTowerSlot == null)
+        //If selectedTowerSlot is empty and is different from new slot, just set new slot
+        if (selectedTowerSlot == null && selectedTowerSlot != newSlot)
         {
             selectedTowerSlot = newSlot;
+
+            selectedSlotHighlight.SetActive(true);
+            selectedSlotHighlight.transform.position = selectedTowerSlot.transform.position;
         }
         //If selected tower slot is the same as newSlot, unselect it
         else if (selectedTowerSlot == newSlot)
         {
             selectedTowerSlot = null;
-        }
-        //If selected tower slot is different with new slot, set new
-        else
-        {
-            selectedTowerSlot = newSlot;
+
+            selectedSlotHighlight.SetActive(false);
         }
     }
 }
