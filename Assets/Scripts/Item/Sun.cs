@@ -8,6 +8,7 @@ public class Sun : MonoBehaviour
     [SerializeField] float fallSpeed = 1f; //How fast sun fall to ground
     [SerializeField] float lifeTime = 5f; //How long does sun live
     float createdTime = 0f; //When was this sun created
+    [SerializeField] int sunValue = 50; //How much sun scroe does sun give
 
     //Start is called before the first frame update
     void Start()
@@ -35,5 +36,12 @@ public class Sun : MonoBehaviour
     public void SetDestinationY(float y)
     {
         destinationY = y;
+    }
+
+    private void OnMouseDown()
+    {
+        //When player click sun, give sun value and destroy sun
+        Player.instance.ChangeSunScore(sunValue);
+        Destroy(gameObject);
     }
 }

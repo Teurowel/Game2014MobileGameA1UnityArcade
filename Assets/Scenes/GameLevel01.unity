@@ -152,9 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668eb0bbbf225824faef967d95fbf3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayCastMask:
-    serializedVersion: 2
-    m_Bits: 0
+  sunScore: 100
 --- !u!4 &4856329
 Transform:
   m_ObjectHideFlags: 0
@@ -4161,7 +4159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2620702811422393146, guid: a710bd861660acc4688c8255cdc95bef, type: 3}
       propertyPath: sunSpawnCoolTime
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6661317319263458469, guid: a710bd861660acc4688c8255cdc95bef, type: 3}
       propertyPath: m_Name

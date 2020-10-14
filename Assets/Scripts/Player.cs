@@ -19,13 +19,15 @@ public class Player : MonoBehaviour
     }
     #endregion
 
-    Camera cam = null;
-    [SerializeField] LayerMask rayCastMask; //Which layer do we raycast?
+    //Camera cam = null;
+    //[SerializeField] LayerMask rayCastMask; //Which layer do we raycast?
+
+    [SerializeField] int sunScore = 100; //This will be used to place tower
 
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;
+        //cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -45,5 +47,15 @@ public class Player : MonoBehaviour
         //        }
         //    }
         //}
+    }
+
+    public void ChangeSunScore(int value)
+    {
+        sunScore += value;
+    }
+
+    public int GetSunScore()
+    {
+        return sunScore;
     }
 }
