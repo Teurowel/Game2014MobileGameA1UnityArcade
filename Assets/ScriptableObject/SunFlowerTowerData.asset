@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerName: SunFlower
   towerIcon: {fileID: -218745708434738110, guid: 343b6d6c9a26b5545b292d5dfc8bbc69, type: 3}
-  towerCost: 10
+  towerCost: 50
   towerPrefab: {fileID: 6661317319263458469, guid: a710bd861660acc4688c8255cdc95bef, type: 3}

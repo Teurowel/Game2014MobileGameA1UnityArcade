@@ -28,18 +28,25 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //Cost check
         //When player select tile, place tower
-        if(TowerListPanel.instance.selectedTowerSlot != null && towerOnTile == null)
+        if (TowerListPanel.instance.selectedTowerSlot != null && towerOnTile == null)
         {
-            Vector3 towerPos = transform.position;
-            towerPos.y += towerYOffset;
+            if (Player.instance.GetSunScore() >= TowerListPanel.instance.selectedTowerSlot.towerData.towerCost)
+            {
+                //Decrease sun score
+                Player.instance.ChangeSunScore(-TowerListPanel.instance.selectedTowerSlot.towerData.towerCost);
 
-            GameObject tower = Instantiate(TowerListPanel.instance.selectedTowerSlot.towerData.towerPrefab, towerPos, Quaternion.identity);
-            towerOnTile = tower.GetComponent<Tower>();
+                Vector3 towerPos = transform.position;
+                towerPos.y += towerYOffset;
 
-            //Deslect tower slot
-            TowerListPanel.instance.DeselectTowerSlot();
+                GameObject tower = Instantiate(TowerListPanel.instance.selectedTowerSlot.towerData.towerPrefab, towerPos, Quaternion.identity);
+                towerOnTile = tower.GetComponent<Tower>();
+
+                //Deslect tower slot
+                TowerListPanel.instance.DeselectTowerSlot();
+            }
+            //Debug.Log(transform.name);
         }
-        //Debug.Log(transform.name);
     }
 }

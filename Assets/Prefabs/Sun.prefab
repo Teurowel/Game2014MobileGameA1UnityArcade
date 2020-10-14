@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallSpeed: 1
   lifeTime: 5
+  sunValue: 25
 --- !u!61 &7400729500984073290
 BoxCollider2D:
   m_ObjectHideFlags: 0
