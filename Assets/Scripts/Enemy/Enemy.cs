@@ -5,17 +5,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
-    [SerializeField] protected int hp = 100; //Health for enemy
-    [SerializeField] protected int maxHp = 100; //Max health for enemy
-    [SerializeField] protected int damage = 10; //damage for enemy
+    protected Stats stats; //enemy stats
     [SerializeField] protected float moveSpeed = 3; //move speed for enemy
 
 
-    //// Start is called before the first frame update
-    //void Start()
-    //{
+    // Start is called before the first frame update
+    protected virtual void Start()
+    {
+        stats = GetComponent<Stats>();
 
-    //}
+        if (stats != null)
+        {
+            stats.OnHealthBelowZero += OnHealthBelowZeroCallBack;
+        }
+    }
 
     // Update is called once per frame
     protected virtual void Update()
@@ -34,6 +37,12 @@ public class Enemy : MonoBehaviour
     public void GetAttacked(int towerDamage)
     {
         //Debug.Log("Enemy get damage: " + towerDamage);
-        hp -= towerDamage;
+        stats.HealthChange(-towerDamage);
+    }
+
+    void OnHealthBelowZeroCallBack()
+    {
+
+        Destroy(gameObject);
     }
 }

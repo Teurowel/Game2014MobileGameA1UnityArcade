@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Tower_SunFlower : Tower
 {
+    [Header("Sun")]
     [SerializeField] GameObject sunPrefab = null; //Sun that SunFlower will spawn
     [SerializeField] float sunSpawnYOffset = 1f; //Y Offset for spawn position of sun
     [SerializeField] float sunSpawnCoolTime = 5f; //Spawn cool time
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+
         //Keep invoking createsun
         InvokeRepeating("CreateSun", sunSpawnCoolTime, sunSpawnCoolTime);
     }

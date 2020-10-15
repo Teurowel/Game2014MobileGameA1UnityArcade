@@ -7,8 +7,10 @@ public class Tower_PeaShooter : Tower
     Animator animator = null; //character's animator    
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+
         animator = GetComponentInChildren<Animator>();
 
         projectilePool = new Queue<GameObject>();
@@ -42,10 +44,10 @@ public class Tower_PeaShooter : Tower
         start.y += rayCastYOffset;
 
         //Raycast Debug line
-        Debug.DrawLine(start, start + (transform.right * attackRange));
+        Debug.DrawLine(start, start + (transform.right * stats.attackRange));
 
         //Cast ray cast
-        RaycastHit2D result = Physics2D.Raycast(start, transform.right, attackRange, enemyLayer);
+        RaycastHit2D result = Physics2D.Raycast(start, transform.right, stats.attackRange, enemyLayer);
         if(result.collider != null)
         {
             return true;
@@ -72,7 +74,7 @@ public class Tower_PeaShooter : Tower
             animator.SetTrigger("attackTrigger");
 
             //attack cool time
-            Invoke(nameof(ResetHasAttacked), 1f / attackPerSec);
+            Invoke(nameof(ResetHasAttacked), 1f / stats.attackPerSec);
         }
     }
 
@@ -98,7 +100,7 @@ public class Tower_PeaShooter : Tower
             if (projComp != null)
             {
                 projComp.SetOwner(this);
-                projComp.SetDamage(damage);
+                projComp.SetDamage(stats.damage);
             }
         }
     }

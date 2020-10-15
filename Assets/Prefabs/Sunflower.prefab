@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025630698936066281}
   - component: {fileID: 2620702811422393146}
+  - component: {fileID: 3576701190147647457}
   m_Layer: 0
   m_Name: SunFlower
   m_TagString: Untagged
@@ -44,20 +45,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0d49d62b078842a201c4d2a144ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
-  damage: 10
-  attackPerSec: 1
-  maxNumOfProjectile: 10
-  attackRange: 10
   projectilePrefab: {fileID: 0}
+  maxNumOfProjectile: 0
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
-  rayCastYOffset: 0.5
-  projectileSpawnXOffset: 3
+    m_Bits: 512
+  rayCastYOffset: 0
+  projectileSpawnXOffset: 0
   sunPrefab: {fileID: 4808307853876473547, guid: 3c2d6544d09cc5e408d28dab1b08c423, type: 3}
   sunSpawnYOffset: 1
   sunSpawnCoolTime: 10
+--- !u!114 &3576701190147647457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661317319263458469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7137681a5a25b544a9339675918eab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  maxHp: 100
+  damage: 10
+  attackRange: 10
+  attackPerSec: 1
 --- !u!1 &7347150047945752581
 GameObject:
   m_ObjectHideFlags: 0

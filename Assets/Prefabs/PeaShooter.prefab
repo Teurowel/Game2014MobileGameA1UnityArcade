@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2908111109901878481}
   - component: {fileID: 2908111109901878480}
+  - component: {fileID: 8330424441209080228}
   m_Layer: 0
   m_Name: PeaShooter
   m_TagString: Untagged
@@ -44,17 +45,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2580c363a81a2e84db52428b7e488ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
-  damage: 20
-  attackPerSec: 1
-  maxNumOfProjectile: 10
-  attackRange: 8
   projectilePrefab: {fileID: 8365277115539777419, guid: 9ea1e1e754531d7458e2f6893e3933d6, type: 3}
+  maxNumOfProjectile: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
   rayCastYOffset: 0.73
   projectileSpawnXOffset: 0.63
+--- !u!114 &8330424441209080228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908111109901878494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7137681a5a25b544a9339675918eab96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100
+  maxHp: 100
+  damage: 10
+  attackRange: 8
+  attackPerSec: 1
 --- !u!1 &2908111110105567695
 GameObject:
   m_ObjectHideFlags: 0
