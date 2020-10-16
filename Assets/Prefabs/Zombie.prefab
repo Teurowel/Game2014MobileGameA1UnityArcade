@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 7285170935179047827}
   - component: {fileID: 5009162530025314380}
   - component: {fileID: 7368148026407592422}
+  - component: {fileID: 225846693131680873}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
@@ -176,6 +177,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  rayCastXOffset: -0.1
+  rayCastYOffset: 0.5
+  towerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &5009162530025314380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +197,7 @@ MonoBehaviour:
   hp: 100
   maxHp: 100
   damage: 10
-  attackRange: 10
+  attackRange: 0.5
   attackPerSec: 1
 --- !u!114 &7368148026407592422
 MonoBehaviour:
@@ -207,3 +213,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 7272097033123742897, guid: b1be642e1ef6e1b41b42ddc1894c238c, type: 3}
   yOffset: 1.6
+--- !u!50 &225846693131680873
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582801502068222737}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

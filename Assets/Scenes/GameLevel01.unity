@@ -2219,7 +2219,7 @@ MonoBehaviour:
   - {fileID: 1946592575}
   - {fileID: 381737253}
   - {fileID: 2079066422}
-  firstSpawnTime: 10
+  firstSpawnTime: 0
   minSpawnTime: 3
   maxSpawnTime: 7
   spawnPointXOffset: 2

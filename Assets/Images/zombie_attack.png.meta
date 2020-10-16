@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 9e7583fde01e1244ba3cd6f63655b121
+guid: a7e8fde1ca9c5fd4d880f53ce277f807
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4954422511873680816
-    second: zombie_walk_0
+      213: -740790965210288447
+    second: zombie_attack_0
   - first:
-      213: 4518634988761362738
-    second: zombie_walk_1
+      213: -7199097879010782113
+    second: zombie_attack_1
   - first:
-      213: 6661725005229174746
-    second: zombie_walk_2
+      213: -301634997788585293
+    second: zombie_attack_2
   - first:
-      213: 5796192586452419314
-    second: zombie_walk_3
+      213: -5708923512371970796
+    second: zombie_attack_3
   - first:
-      213: -7047534956625860398
-    second: zombie_walk_4
+      213: 3570965200677785207
+    second: zombie_attack_4
   - first:
-      213: 3364935427927637001
-    second: zombie_walk_5
+      213: 6865893561633628528
+    second: zombie_attack_5
   - first:
-      213: 5437402136799378347
-    second: zombie_walk_6
+      213: 9201884942576240492
+    second: zombie_attack_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,148 +146,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_walk_0
+      name: zombie_attack_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 29
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b5ed6f5605a1c440800000000000000
-      internalID: 4954422511873680816
+      spriteID: 1ce62d1ca8e28b5f0800000000000000
+      internalID: -740790965210288447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_1
+      name: zombie_attack_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 33
         y: 0
-        width: 25
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 231b5ced49a65be30800000000000000
-      internalID: 4518634988761362738
+      spriteID: f545b4a1f9aa71c90800000000000000
+      internalID: -7199097879010782113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_2
+      name: zombie_attack_2
       rect:
         serializedVersion: 2
-        x: 52
+        x: 64
         y: 0
-        width: 26
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adfa500d893337c50800000000000000
-      internalID: 6661725005229174746
+      spriteID: 3b25cf0519060dbf0800000000000000
+      internalID: -301634997788585293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_3
+      name: zombie_attack_3
       rect:
         serializedVersion: 2
-        x: 77
+        x: 95
         y: 0
-        width: 28
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f2cf35a276307050800000000000000
-      internalID: 5796192586452419314
+      spriteID: 41d713b0054d5c0b0800000000000000
+      internalID: -5708923512371970796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_4
+      name: zombie_attack_4
       rect:
         serializedVersion: 2
-        x: 104
+        x: 126
         y: 0
-        width: 23
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d8ea20eb40223e90800000000000000
-      internalID: -7047534956625860398
+      spriteID: 77e4ea32eed9e8130800000000000000
+      internalID: 3570965200677785207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_5
+      name: zombie_attack_5
       rect:
         serializedVersion: 2
-        x: 127
+        x: 156
         y: 0
         width: 30
-        height: 49
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90cf0c981f6a2be20800000000000000
-      internalID: 3364935427927637001
+      spriteID: 07160d631dd884f50800000000000000
+      internalID: 6865893561633628528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zombie_walk_6
+      name: zombie_attack_6
       rect:
         serializedVersion: 2
-        x: 158
+        x: 186
         y: 0
-        width: 29
-        height: 49
+        width: 31
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab70e05f68857b40800000000000000
-      internalID: 5437402136799378347
+      spriteID: c67c5420a99a3bf70800000000000000
+      internalID: 9201884942576240492
       vertices: []
       indices: 
       edges: []
