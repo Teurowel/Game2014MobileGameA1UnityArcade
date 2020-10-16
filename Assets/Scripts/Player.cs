@@ -1,4 +1,12 @@
-﻿//using System.Collections;
+﻿//SourceFileName : Player.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.16, 2020
+//Program description : Player class which have information related to player status such as sun score
+//Revision History : Oct.16, 2020 : Added sun score variable
+//                                  Added OnSunScoreChange delgate to notify sun score text
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 
