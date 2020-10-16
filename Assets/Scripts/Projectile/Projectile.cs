@@ -6,27 +6,36 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float speed = 1f; //Projectile speed
     int damage = 10; //Projectile damage, it comes from tower
-    Tower owner = null; //Owner of this projectile
+    bool hasCollided = false; //Has projectile collided with enemy?
 
-    Vector2 screenBounds;
+    Vector2 screenBounds; //Screen bounds
+
+    Animator anim = null;
+    Tower owner = null; //Owner of this projectile
 
     // Start is called before the first frame update
     void Start()
     {
+        //Calculate screen bounds
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Just move  to right direction
-        transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
-
-        //Debug.Log(screenBounds);
-        if(transform.position.x >= screenBounds.x)
+        if (hasCollided == false)
         {
-            owner.ReturnProjectile(gameObject);
-        }
+            transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
+
+            //Check screen bounds
+            if (transform.position.x >= screenBounds.x)
+            {
+                owner.ReturnProjectile(gameObject);
+            }
+        }   
     }
 
 
@@ -37,12 +46,23 @@ public class Projectile : MonoBehaviour
         Enemy comp = collision.gameObject.GetComponent<Enemy>();
         if(comp != null)
         {
+            //Stop moving projectile
+            hasCollided = true;
+
             //Deal enemy
             comp.GetAttacked(damage);
 
-            //Go back to projectile pool
-            owner.ReturnProjectile(gameObject);
+            //Trigger collide animation
+            anim.SetTrigger("collisionTrigger");
         }
+    }
+
+    //This function will be called when projectile collision animation is finished
+    public void OnProjectileColAnimFinished()
+    {
+        //Go back to projectile pool
+        owner.ReturnProjectile(gameObject);
+        hasCollided = false;
     }
 
 
