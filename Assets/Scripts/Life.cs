@@ -36,16 +36,22 @@ public class Life : MonoBehaviour
         if ((target = DetectEnemy()) != null)
         {
             //Activate life
-            hasActivated = true;
+            if (hasActivated == false)
+            {
+                hasActivated = true;
+                if (SoundManager.instance != null)
+                {
+                    SoundManager.instance.Play("LifeActivatedSFX");
+                }
+            }
         }
 
         //If life has activated...
         if (hasActivated == true)
         {
             MoveAndKillTarget(target);
+            CheckBound();
         }
-
-        CheckBound();
     }
 
     Collider2D DetectEnemy()

@@ -1918,6 +1918,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: LifeActivatedSFX
+    clip: {fileID: 8300000, guid: cc403160fb3f1ac48a9b8cbf47a571f9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1272833637
 Transform:
   m_ObjectHideFlags: 0
@@ -2249,7 +2255,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 049abaaa0b6350b4181c080313e27ec1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
