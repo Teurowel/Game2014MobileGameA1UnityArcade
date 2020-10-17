@@ -5,7 +5,7 @@ using UnityEngine;
 public class Zombie : Enemy
 {
     // Start is called before the first frame update
-    protected virtual void Start()
+    protected override void Start()
     {
         base.Start();
     }

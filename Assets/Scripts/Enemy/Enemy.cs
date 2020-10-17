@@ -1,7 +1,7 @@
 ﻿//SourceFileName : Enemy.cs
 //Author's name : Doosung Jang
 //Studnet Number : 101175013
-//Date last Modified : Oct.16, 2020
+//Date last Modified : Oct.17, 2020
 //Program description : Base class for all enemy. It has common variable or function for all enemies
 //Revision History : Oct.16, 2020 : Added stats, moveSpeed
 //                                  Added detect enemy, hasAttacked, Attack()
@@ -21,32 +21,56 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] protected LayerMask towerLayer; //Which layer Enemy atatck
 
+    bool hasStartedAttack = false; //Has enemy started attack?
     bool hasAttacked = false; //Has enemy attacked tower?
+
+    Animator animator = null; //character's animator    
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
         stats = GetComponent<Stats>();
+        animator = GetComponentInChildren<Animator>();
 
         if (stats != null)
         {
             stats.OnHealthBelowZero += OnHealthBelowZeroCallBack;
         }
+
+        
     }
 
     // Update is called once per frame
     protected virtual void Update()
     {
         //Keep detecting tower
-        if(DetectTower())
+        Collider2D target = null;
+
+        if((target = DetectTower()) != null)
         {
             //Debug.Log("Detect tower");
             //If enemy detected tower, attack
-            Attack();
+
+            //Check has started attack
+            if(hasStartedAttack == false)
+            {
+                hasStartedAttack = true;
+                //Change animatino using trigger
+                animator.SetTrigger("attackTrigger");
+            }
+
+            Attack(target);
         }
         //If enemy doesn't detect tower, move
         else
         {
+            //Stop attacking animatino
+            if (hasStartedAttack == true)
+            {
+                hasStartedAttack = false;
+                animator.SetTrigger("killedTower");
+            }
+
             Move();
         }
     }
@@ -71,7 +95,7 @@ public class Enemy : MonoBehaviour
 
 
     //Detect tower
-    bool DetectTower()
+    Collider2D DetectTower()
     {
         Vector3 start = transform.position;
         start.x += rayCastXOffset;
@@ -84,24 +108,30 @@ public class Enemy : MonoBehaviour
         RaycastHit2D result = Physics2D.Raycast(start, -transform.right, stats.attackRange, towerLayer);
         if (result.collider != null)
         {
-            return true;
+            return result.collider;
+            
         }
 
-        return false;
+        return null;
     }
 
-    void Attack()
+    void Attack(Collider2D target)
     {
         if (hasAttacked == false)
         {
-            Debug.Log("Zombie : Attack");
+            //Debug.Log("Zombie : Attack");
             hasAttacked = true;
 
 
+            //Damage tower
+            Tower comp = target.gameObject.GetComponent<Tower>();
+            if (comp != null)
+            {
+                //Deal enemy
+                comp.GetAttacked(stats.damage);
+            }
 
 
-            //Change animatino using trigger
-            //animator.SetTrigger("attackTrigger");
 
             //attack cool time
             Invoke(nameof(ResetHasAttacked), 1f / stats.attackPerSec);

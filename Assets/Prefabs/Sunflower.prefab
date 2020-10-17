@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2620702811422393146}
   - component: {fileID: 3576701190147647457}
   - component: {fileID: 665517637270680645}
+  - component: {fileID: -8879631908944460091}
   m_Layer: 11
   m_Name: SunFlower
   m_TagString: Untagged
@@ -100,6 +101,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34032345, y: 0.7988219}
   m_EdgeRadius: 0
+--- !u!114 &-8879631908944460091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661317319263458469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85330fea57a98ef4495bddc719299923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPrefab: {fileID: 7272097033123742897, guid: b1be642e1ef6e1b41b42ddc1894c238c, type: 3}
+  yOffset: 1.6
 --- !u!1 &7347150047945752581
 GameObject:
   m_ObjectHideFlags: 0

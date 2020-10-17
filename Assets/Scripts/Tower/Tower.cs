@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿//SourceFileName : Tower.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.17, 2020
+//Program description : Base class for all tower. It has common variable or function for all tower
+//Revision History : Oct.16, 2020 : Added stats, projectileprefab, projectilepool
+                                 
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +31,11 @@ public class Tower : MonoBehaviour
     {
         //Set hp as max hp
         stats = GetComponent<Stats>();
+
+        if (stats != null)
+        {
+            stats.OnHealthBelowZero += OnHealthBelowZeroCallBack;
+        }
     }
 
     // Update is called once per frame
@@ -42,5 +56,25 @@ public class Tower : MonoBehaviour
     {
         projectile.SetActive(false);
         projectilePool.Enqueue(projectile);
+    }
+
+    public void GetAttacked(int enemyDamage)
+    {
+        //Debug.Log("Enemy get damage: " + towerDamage);
+        stats.HealthChange(-enemyDamage);
+    }
+
+    void OnHealthBelowZeroCallBack()
+    {
+        //Destroy projectile pool
+        if(projectilePool != null)
+        {
+            for(int i = 0; i < projectilePool.Count; ++i)
+            {
+                Destroy(projectilePool.Dequeue());
+            }
+        }
+
+        Destroy(gameObject);
     }
 }
