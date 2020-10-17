@@ -122,7 +122,7 @@ public class Enemy : MonoBehaviour
             //Debug.Log("Zombie : Attack");
             hasAttacked = true;
 
-
+            
             //Damage tower
             Tower comp = target.gameObject.GetComponent<Tower>();
             if (comp != null)

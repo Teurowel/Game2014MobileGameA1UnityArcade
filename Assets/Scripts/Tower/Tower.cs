@@ -43,7 +43,10 @@ public class Tower : MonoBehaviour
     public void GetAttacked(int enemyDamage)
     {
         //Debug.Log("Enemy get damage: " + towerDamage);
-        stats.HealthChange(-enemyDamage);
+        if (stats != null)
+        {
+            stats.HealthChange(-enemyDamage);
+        }
     }
 
     protected virtual void OnHealthBelowZeroCallBack()
