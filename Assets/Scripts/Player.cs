@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     //Camera cam = null;
     //[SerializeField] LayerMask rayCastMask; //Which layer do we raycast?
 
+    public Vector2 screenBounds; //Screen bounds
+
     [SerializeField] int sunScore = 100; //This will be used to place tower
 
     public delegate void OnSunScoreChange(int _sunScore); //delegate for sun score change
@@ -38,7 +40,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //cam = Camera.main;
+        //Calculate screen bounds
+        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     // Update is called once per frame

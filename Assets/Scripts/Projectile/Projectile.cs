@@ -8,17 +8,12 @@ public class Projectile : MonoBehaviour
     int damage = 10; //Projectile damage, it comes from tower
     bool hasCollided = false; //Has projectile collided with enemy?
 
-    Vector2 screenBounds; //Screen bounds
-
     Animator anim = null;
     ActiveTower owner = null; //Owner of this projectile
 
     // Start is called before the first frame update
     void Start()
     {
-        //Calculate screen bounds
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-
         anim = GetComponentInChildren<Animator>();
     }
 
@@ -31,7 +26,7 @@ public class Projectile : MonoBehaviour
             transform.position += new Vector3(speed * Time.deltaTime, 0f, 0f);
 
             //Check screen bounds
-            if (transform.position.x >= screenBounds.x)
+            if (transform.position.x >= Player.instance.screenBounds.x)
             {
                 owner.ReturnProjectile(gameObject);
             }
