@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     Vector2 screenBounds; //Screen bounds
 
     Animator anim = null;
-    Tower owner = null; //Owner of this projectile
+    ActiveTower owner = null; //Owner of this projectile
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +68,7 @@ public class Projectile : MonoBehaviour
 
 
     #region GetterSetter
-    public void SetOwner(Tower _owner)
+    public void SetOwner(ActiveTower _owner)
     {
         owner = _owner;
     }

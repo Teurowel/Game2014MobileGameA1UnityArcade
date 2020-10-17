@@ -9,7 +9,7 @@
 //using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower_SunFlower : Tower
+public class Tower_SunFlower : PassiveTower
 {
     [Header("Sun")]
     [SerializeField] GameObject sunPrefab = null; //Sun that SunFlower will spawn
@@ -28,13 +28,13 @@ public class Tower_SunFlower : Tower
         Invoke("CreateSun", Random.Range(minSpawnTime, maxSpawnTime));
     }
 
-    // Update is called once per frame
-    //void Update()
-    //{
-    //    //base.Update();
+    //Update is called once per frame
+    protected override void Update()
+    {
+        base.Update();
 
-    //    //DoJob();
-    //}
+        //DoJob();
+    }
 
     protected override void DoJob()
     {
