@@ -19,6 +19,7 @@ public class Tower : MonoBehaviour
     [Header("Projectile")]
     [SerializeField] protected GameObject projectilePrefab = null; //Projectile prefab
     protected Queue<GameObject> projectilePool = null; //Projectile pool
+    protected List<GameObject> projectileRef = null; //Reference to all projectile(Tower should destroy all projectile when tower get destoryed)
     [SerializeField] protected int maxNumOfProjectile = 10; //Number of projectile pool
     [SerializeField] protected LayerMask enemyLayer; //Which layer tower atatck
     [SerializeField] protected float rayCastYOffset = 0.5f; //Y offset for ray cast start pos
@@ -69,10 +70,15 @@ public class Tower : MonoBehaviour
         //Destroy projectile pool
         if(projectilePool != null)
         {
-            for(int i = 0; i < projectilePool.Count; ++i)
+            for(int i = 0; i < projectileRef.Count; ++i)
             {
-                Destroy(projectilePool.Dequeue());
+                Destroy(projectileRef[i]);
             }
+
+            //for(int i = 0; i < projectilePool.Count; ++i)
+            //{
+            //    Destroy(projectilePool.Dequeue());
+            //}
         }
 
         Destroy(gameObject);

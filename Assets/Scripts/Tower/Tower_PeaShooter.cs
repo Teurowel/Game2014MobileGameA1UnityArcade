@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿//SourceFileName : Tower_PeaShooter.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.17, 2020
+//Program description : PeaShooter class
+//Revision History : Oct.16, 2020 : Created
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,14 +20,17 @@ public class Tower_PeaShooter : Tower
 
         animator = GetComponentInChildren<Animator>();
 
+
+        //Create projectile pool and ref
         projectilePool = new Queue<GameObject>();
-        //Create projectile pool
+        projectileRef = new List<GameObject>();
         for (int i = 0; i < maxNumOfProjectile; ++i)
         {
             GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
             projectile.SetActive(false);
 
             projectilePool.Enqueue(projectile);
+            projectileRef.Add(projectile);
         }
     }
 
