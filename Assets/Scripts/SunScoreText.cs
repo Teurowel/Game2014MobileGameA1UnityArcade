@@ -14,6 +14,10 @@ public class SunScoreText : MonoBehaviour
         Player.instance.onSunScoreChange += OnSunScoreChangeCallback;
 
         sunScoreText = GetComponent<TextMeshProUGUI>();
+        if(sunScoreText != null)
+        {
+            sunScoreText.text = Player.instance.GetSunScore().ToString();
+        }
     }
 
     //// Update is called once per frame

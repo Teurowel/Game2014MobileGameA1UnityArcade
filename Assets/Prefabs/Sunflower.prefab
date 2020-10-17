@@ -47,13 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d0d49d62b078842a201c4d2a144ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
-  maxNumOfProjectile: 0
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  rayCastYOffset: 0
-  projectileSpawnXOffset: 0
   sunPrefab: {fileID: 4808307853876473547, guid: 3c2d6544d09cc5e408d28dab1b08c423, type: 3}
   sunSpawnYOffset: 1
   minSpawnTime: 3
@@ -114,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 7272097033123742897, guid: b1be642e1ef6e1b41b42ddc1894c238c, type: 3}
-  yOffset: 1.6
+  yOffset: 1
 --- !u!1 &7347150047945752581
 GameObject:
   m_ObjectHideFlags: 0

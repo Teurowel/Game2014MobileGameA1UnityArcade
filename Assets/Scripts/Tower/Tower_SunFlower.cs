@@ -36,12 +36,6 @@ public class Tower_SunFlower : PassiveTower
         //DoJob();
     }
 
-    protected override void DoJob()
-    {
-        base.DoJob();
-        //Debug.Log("SunFlower DoJob");
-    }
-
     //Sun is our score, will be used to create tower
     void CreateSun()
     {

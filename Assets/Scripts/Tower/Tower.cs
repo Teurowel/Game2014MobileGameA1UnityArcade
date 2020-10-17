@@ -40,14 +40,6 @@ public class Tower : MonoBehaviour
         //Debug.Log("Tower Update");
     }
 
-    //Any tower will override this method
-    protected virtual void DoJob()
-    {
-        Debug.Log("Tower base DoJob");
-    }
-
-   
-
     public void GetAttacked(int enemyDamage)
     {
         //Debug.Log("Enemy get damage: " + towerDamage);

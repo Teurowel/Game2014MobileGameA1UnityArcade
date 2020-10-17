@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPrefab: {fileID: 7272097033123742897, guid: b1be642e1ef6e1b41b42ddc1894c238c, type: 3}
-  yOffset: 1.6
+  yOffset: 1.4
 --- !u!50 &225846693131680873
 Rigidbody2D:
   serializedVersion: 4
