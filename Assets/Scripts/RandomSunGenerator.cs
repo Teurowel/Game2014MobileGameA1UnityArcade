@@ -3,7 +3,8 @@
 //Studnet Number : 101175013
 //Date last Modified : Oct.18, 2020
 //Program description : RandomSunGenerator will randomly generate sun from sky
-//Revision History : Oct.18, 2020 : Created
+//Revision History : Oct.18, 2020 : Created, Added SpawnSun
+
 
 //using System.Collections;
 //using System.Collections.Generic;
