@@ -3886,6 +3886,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 248718388259244620, guid: 526cdc01e8a48714aadb9a54095e9951, type: 3}
   m_PrefabInstance: {fileID: 1116084796}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174450822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174450824}
+  - component: {fileID: 1174450823}
+  m_Layer: 0
+  m_Name: RandomSunGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1174450823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174450822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ebd0e8e2bf87b43bd2388557bab9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnXOffset: 2
+  spawnTopOffset: 2.8
+  spawnBottomOffset: 1
+  minSpawnTime: 1
+  maxSpawnTime: 3
+  firstSpawnTime: 1
+  sunPrefab: {fileID: 4808307853876473547, guid: 3c2d6544d09cc5e408d28dab1b08c423, type: 3}
+--- !u!4 &1174450824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174450822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 5.86, z: -10.856447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1195349250
 PrefabInstance:
   m_ObjectHideFlags: 0
