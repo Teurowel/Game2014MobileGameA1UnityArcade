@@ -1,4 +1,12 @@
-﻿//using System.Collections;
+﻿//SourceFileName : Sun.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.18, 2020
+//Program description : Sun's behaviour, You can earn score when pick up sun
+//Revision History : Sep.18, 2020 Created, Adding OnMouseDOwn funtion
+//                   Oct.18, 2020 Added play sound
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,5 +51,12 @@ public class Sun : MonoBehaviour
         //When player click sun, give sun value and destroy sun
         Player.instance.ChangeSunScore(sunValue);
         Destroy(gameObject);
+
+        //Play sound
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.Play("SunPickedSFX");
+        }
+        
     }
 }

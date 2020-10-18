@@ -1,4 +1,13 @@
-﻿//using System.Collections;
+﻿//SourceFileName : TowerListPanel.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.18, 2020
+//Program description : TolwerListPanel UI class that control tower list panel
+//Revision History : Sep.18, 2020 created, Added SetSelectedTowerSlot
+//                   Oct.18, 2020 Added play sound
+
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,6 +60,13 @@ public class TowerListPanel : MonoBehaviour
         else if (selectedTowerSlot == newSlot)
         {
             DeselectTowerSlot();
+        }
+
+
+        //Play sound
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.Play("TowerSelectSFX");
         }
     }
 

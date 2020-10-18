@@ -1,4 +1,13 @@
-﻿//using System.Collections;
+﻿//SourceFileName : Projectile.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.17, 2020
+//Program description : Projectile's base class
+//Revision History : Oct.16, 2020 : Created, Added OnTriggerEnter2D
+//                   Oct.18.2020 : Added collision sound
+
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,6 +55,12 @@ public class Projectile : MonoBehaviour
 
             //Deal enemy
             comp.GetAttacked(damage);
+
+            //Play sound
+            if (SoundManager.instance != null)
+            {
+                SoundManager.instance.Play("ProjectileCollideSFX");
+            }
 
             //Trigger collide animation
             anim.SetTrigger("collisionTrigger");

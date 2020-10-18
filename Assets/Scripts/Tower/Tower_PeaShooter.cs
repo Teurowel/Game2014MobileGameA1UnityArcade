@@ -16,7 +16,7 @@ public class Tower_PeaShooter : ActiveTower
     {
         base.Start();
 
-        Debug.Log("Tower_PeaShooter Start");
+        // Debug.Log("Tower_PeaShooter Start");
     }
 
     // Update is called once per frame

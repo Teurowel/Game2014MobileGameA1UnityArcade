@@ -4,7 +4,7 @@
 //Date last Modified : Oct.17, 2020
 //Program description : Base class for all tower. It has common variable or function for all tower
 //Revision History : Oct.16, 2020 : Added stats, projectileprefab, projectilepool
-                                 
+//                   Oct.18, 2020 : Added sound                                 
 
 
 using System.Collections;
@@ -21,7 +21,7 @@ public class Tower : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        Debug.Log("Tower Start");
+        //Debug.Log("Tower Start");
 
         //Set hp as max hp
         stats = GetComponent<Stats>();
@@ -51,6 +51,12 @@ public class Tower : MonoBehaviour
 
     protected virtual void OnHealthBelowZeroCallBack()
     {
+        //Play sound
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.Play("Zombie_KillTowerSFX");
+        }
+
         Destroy(gameObject);
     }
 }

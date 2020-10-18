@@ -45,6 +45,13 @@ public class Tile : MonoBehaviour
 
                 //Deslect tower slot
                 TowerListPanel.instance.DeselectTowerSlot();
+
+                //Play sound
+                if (SoundManager.instance != null)
+                {
+                    SoundManager.instance.Play("TowerPlaceSFX");
+                }
+
             }
             //Debug.Log(transform.name);
         }

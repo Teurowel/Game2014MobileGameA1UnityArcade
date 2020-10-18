@@ -1,11 +1,11 @@
 ﻿//SourceFileName : Enemy.cs
 //Author's name : Doosung Jang
 //Studnet Number : 101175013
-//Date last Modified : Oct.17, 2020
+//Date last Modified : Oct.18, 2020
 //Program description : Base class for all enemy. It has common variable or function for all enemies
 //Revision History : Oct.16, 2020 : Added stats, moveSpeed
 //                                  Added detect enemy, hasAttacked, Attack()
-
+//                   Oct.18, 2020 : Added play sound
 
 //using System.Collections;
 //using System.Collections.Generic;
@@ -131,6 +131,13 @@ public class Enemy : MonoBehaviour
                 comp.GetAttacked(stats.damage);
             }
 
+
+            //Play sound
+            if (SoundManager.instance != null)
+            {
+                SoundManager.instance.Play("Zombie_AttackSFX");
+            }
+            
 
 
             //attack cool time

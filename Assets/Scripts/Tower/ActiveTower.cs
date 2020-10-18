@@ -1,9 +1,10 @@
 ﻿//SourceFileName : Active.cs
 //Author's name : Doosung Jang
 //Studnet Number : 101175013
-//Date last Modified : Oct.17, 2020
+//Date last Modified : Oct.18, 2020
 //Program description : Activetower is the tower which shoot projectile
 //Revision History : Oct.17, 2020 Created
+//                   Oct.18, 2020 Added attack sound
 
 using System.Collections;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ public class ActiveTower : Tower
     {
         base.Start();
 
-        Debug.Log("ActiveTower Start");
+        //Debug.Log("ActiveTower Start");
 
         //Create projectile pool and ref
         projectilePool = new Queue<GameObject>();
@@ -87,7 +88,11 @@ public class ActiveTower : Tower
             //Shoot projectile
             ShootProjectile();
 
-
+            //Play sound
+            if (SoundManager.instance != null)
+            {
+                SoundManager.instance.Play("PeaShoterAttackSFX");
+            }
 
 
             //Change animatino using trigger

@@ -1924,6 +1924,54 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: TowerSelectSFX
+    clip: {fileID: 8300000, guid: 881ec3c2fba07c54488ebfce74d32461, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TowerPlaceSFX
+    clip: {fileID: 8300000, guid: 6f1bf957dba076d4382b30681ca7ce34, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SunPickedSFX
+    clip: {fileID: 8300000, guid: 867b04de3b8e6c64898b3eef22de6931, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Zombie_AttackSFX
+    clip: {fileID: 8300000, guid: 870dccfea42ca8b47b85ac8b417a722c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Zombie_KillTowerSFX
+    clip: {fileID: 8300000, guid: 33d243e51ef8fc54f8dcb5b6e5311020, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ZombieSFX
+    clip: {fileID: 8300000, guid: 18d4731024bdd9744ab422cfbc371779, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ProjectileCollideSFX
+    clip: {fileID: 8300000, guid: e72e13e03bd6beb47953d695477805ce, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PeaShoterAttackSFX
+    clip: {fileID: 8300000, guid: b1ae754ac3fc98b4c96d9648e584a294, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1272833637
 Transform:
   m_ObjectHideFlags: 0

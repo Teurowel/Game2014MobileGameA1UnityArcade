@@ -61,7 +61,7 @@ public class SoundManager : MonoBehaviour
         Sound foundSound = Array.Find(listOfSounds, sound => sound.name == name);
         if(foundSound != null)
         {
-            foundSound.source.Play();
+            foundSound.source.PlayOneShot(foundSound.clip);
         }
     }
 
