@@ -42,30 +42,22 @@ public class Player : MonoBehaviour
     {
         //Calculate screen bounds
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
+        //Update global data
+        GlobalData.Instance.sunScore = sunScore;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Left mouse button
-        //if(Input.GetMouseButtonDown(0))
-        //{
-        //    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        //    RaycastHit result;
+    //// Update is called once per frame
+    //void Update()
+    //{
 
-        //    if (Physics.Raycast(ray, out result, 100.0f))
-        //    {
-        //        if(result.collider != null)
-        //        {
-        //            Debug.Log(result.collider.gameObject.name);
-        //        }
-        //    }
-        //}
-    }
+    //}
 
     public void ChangeSunScore(int value)
     {
         sunScore += value;
+
+        GlobalData.Instance.sunScore = sunScore;
 
         onSunScoreChange.Invoke(sunScore);
     }
