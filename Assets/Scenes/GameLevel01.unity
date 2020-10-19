@@ -3918,9 +3918,9 @@ MonoBehaviour:
   spawnXOffset: 2
   spawnTopOffset: 2.8
   spawnBottomOffset: 1
-  minSpawnTime: 1
-  maxSpawnTime: 3
-  firstSpawnTime: 1
+  minSpawnTime: 5
+  maxSpawnTime: 10
+  firstSpawnTime: 5
   sunPrefab: {fileID: 4808307853876473547, guid: 3c2d6544d09cc5e408d28dab1b08c423, type: 3}
 --- !u!4 &1174450824
 Transform:

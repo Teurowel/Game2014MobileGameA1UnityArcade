@@ -1,4 +1,11 @@
-﻿//using System.Collections;
+﻿//SourceFileName : HealthUI.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Sep.18, 2020
+//Program description : HealthUI that is attached to characters
+//Revision History : Sep.18, 2020 Created, Added LateUpdate, OnHealthChangedCallback
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

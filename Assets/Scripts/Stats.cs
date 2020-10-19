@@ -1,5 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//SourceFileName : Stats.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Sep.18, 2020
+//Program description : Basic enemy zombie
+//Revision History : Sep.18, 2020 Created, Added stats for characters, Added HealthChange
+
+
+//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 
 //Common stats for tower and enemy

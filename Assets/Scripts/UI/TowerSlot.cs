@@ -1,4 +1,11 @@
-﻿//using System.Collections;
+﻿//SourceFileName : TowerSlot.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Sep.18, 2020
+//Program description : TowerSlot represent one towe slot in slot panel
+//Revision History : Sep.18, 2020 created, Added OnTowerSlotBtnClick
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

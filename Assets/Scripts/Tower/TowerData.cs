@@ -1,4 +1,12 @@
-﻿//using System.Collections;
+﻿//SourceFileName : TowerData.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.16, 2020
+//Program description : This is ScriptableObject that holds tower's data
+//Revision History : Oct.16, 2020 : Created, Added tower's data
+
+
+//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 

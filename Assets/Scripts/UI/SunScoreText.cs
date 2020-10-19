@@ -1,5 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//SourceFileName : SunScoreText.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.18, 2020
+//Program description : SunScoreText represent our sun scroe during game
+//Revision History : Oct.18, 2020 : Created, Added OnSunScoreChangeCallback
+
+//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 

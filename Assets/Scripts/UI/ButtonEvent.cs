@@ -1,5 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//SourceFileName : ButtonEvent.cs
+//Author's name : Doosung Jang
+//Studnet Number : 101175013
+//Date last Modified : Oct.18, 2020
+//Program description : This class will handle button's event(click or sth)
+//Revision History : Oct.18, 2020 : Created, Added PlayButtonSFX()
+
+
+//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
