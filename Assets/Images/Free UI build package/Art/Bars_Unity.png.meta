@@ -581,13 +581,13 @@ TextureImporter:
       name: Bars_Unity_16
       rect:
         serializedVersion: 2
-        x: 5
-        y: 171
+        x: 6
+        y: 170
         width: 419
         height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 25, y: 22, z: 25, w: 19}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -608,7 +608,7 @@ TextureImporter:
         height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 25, y: 25, z: 25, w: 25}
       outline: []
       physicsShape: []
       tessellationDetail: 0

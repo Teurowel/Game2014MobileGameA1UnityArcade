@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Tile : MonoBehaviour
 {
@@ -20,14 +21,20 @@ public class Tile : MonoBehaviour
 
     //}
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     private void OnMouseDown()
     {
+        
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            Debug.Log("Clicked on the UI");
+        }
+
         //Cost check
         //When player select tile, place tower
         if (TowerListPanel.instance.selectedTowerSlot != null && towerOnTile == null)
