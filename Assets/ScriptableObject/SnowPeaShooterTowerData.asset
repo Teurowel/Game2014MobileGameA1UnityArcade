@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8316199d38f064794857accd86cffd, type: 3}
+  m_Name: SnowPeaShooterTowerData
+  m_EditorClassIdentifier: 
+  towerName: SnowPeaShooter
+  towerIcon: {fileID: 8814714980663316742, guid: 3984231a4f5af914696237bc57fe4ed1, type: 3}
+  towerCost: 175
+  towerPrefab: {fileID: 2908111109901878494, guid: 5a2d368a65b919446b364690f7909629, type: 3}
