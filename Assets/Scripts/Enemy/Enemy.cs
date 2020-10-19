@@ -26,6 +26,11 @@ public class Enemy : MonoBehaviour
 
     Animator animator = null; //character's animator    
 
+
+    float originMoveSpeed = 0f; //Save original move speed
+    bool HasHitBySnow = false; //Has enemy hit by snow?
+    float snowEffectTime = 0f; //Timer for snow effect duration
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -37,7 +42,8 @@ public class Enemy : MonoBehaviour
             stats.OnHealthBelowZero += OnHealthBelowZeroCallBack;
         }
 
-        
+        originMoveSpeed = moveSpeed;
+        Debug.Log(originMoveSpeed);
     }
 
     // Update is called once per frame
@@ -73,6 +79,9 @@ public class Enemy : MonoBehaviour
 
             Move();
         }
+
+        //Check snow effect duration
+        SnowEffectDurationCheck();
     }
 
     protected virtual void Move()
@@ -148,5 +157,40 @@ public class Enemy : MonoBehaviour
     void ResetHasAttacked()
     {
         hasAttacked = false;
+    }
+
+    //When hit by snow projectile, decrease movement speed for a certain time
+    public void HitBySnow(float snowEffectDuration)
+    {
+        if (HasHitBySnow == false)
+        {
+            //Decase movespeed to 1/2 of original move speed
+            moveSpeed = originMoveSpeed * 0.5f;
+
+            HasHitBySnow = true;
+        }
+
+        //If hit by snow again and agina, reassign snoweffectduration
+        snowEffectTime = snowEffectDuration;
+    }
+
+
+    //Check snow effect duration
+    void SnowEffectDurationCheck()
+    {
+        //If the enemy has hit by snow...
+        if (HasHitBySnow)
+        {
+            //Decreaseing snow effec ttime
+            snowEffectTime -= Time.deltaTime;
+
+            //If snow effect time goes below zero..
+            if(snowEffectTime <= 0)
+            {
+                //Reset move speed
+                HasHitBySnow = false;
+                moveSpeed = originMoveSpeed;
+            }
+        }
     }
 }

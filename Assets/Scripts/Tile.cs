@@ -29,12 +29,6 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            Debug.Log("Clicked on the UI");
-        }
-
         //Cost check
         //When player select tile, place tower
         if (TowerListPanel.instance.selectedTowerSlot != null && towerOnTile == null)

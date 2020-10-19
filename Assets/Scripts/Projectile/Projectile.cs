@@ -21,13 +21,13 @@ public class Projectile : MonoBehaviour
     ActiveTower owner = null; //Owner of this projectile
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         //Just move  to right direction
         if (hasCollided == false)
@@ -56,6 +56,8 @@ public class Projectile : MonoBehaviour
             //Deal enemy
             comp.GetAttacked(damage);
 
+            SpecialEffect(comp);
+
             //Play sound
             if (SoundManager.instance != null)
             {
@@ -73,6 +75,12 @@ public class Projectile : MonoBehaviour
         //Go back to projectile pool
         owner.ReturnProjectile(gameObject);
         hasCollided = false;
+    }
+
+    //Projectile's special effect
+    public virtual void SpecialEffect(Enemy target)
+    {
+
     }
 
 

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f62837a08b5cc45bc905ccba6a755f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 8365277115539777419, guid: 9ea1e1e754531d7458e2f6893e3933d6, type: 3}
+  projectilePrefab: {fileID: 8365277115539777419, guid: 742449ec6aa8c3d498d1175909f1f422, type: 3}
   maxNumOfProjectile: 5
   enemyLayer:
     serializedVersion: 2

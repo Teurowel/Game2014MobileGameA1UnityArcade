@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SnowPeaShooterProjAnimCon
+  m_Controller: {fileID: 9100000, guid: 4116fa90365cfe045b487d0b4e8751fa, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 19fa418ecd338f1408a4d2088670806f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c50646b0a40b2b24dba2dbd7aa891145, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 223fc0c7deab44c44af316f2a93ffa07, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 72f281db21c13d14aae4a5f6a7a36b07, type: 2}
