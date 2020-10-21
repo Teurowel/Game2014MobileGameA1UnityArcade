@@ -19,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         //First diable pause menu
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
     // Update is called once per frame
