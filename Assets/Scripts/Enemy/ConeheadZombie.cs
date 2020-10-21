@@ -3,8 +3,7 @@
 //Studnet Number : 101175013
 //Date last Modified : Oct.19, 2020
 //Program description : Conehead Zombie is stronger than normal zombie
-//Revision History : Sep.18, 2020 Created
-//                   Oct.18, 2020 Added play sound
+//Revision History : Oct.19, 2020 Created,
 
 //using System.Collections;
 //using System.Collections.Generic;

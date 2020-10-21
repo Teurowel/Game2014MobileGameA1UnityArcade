@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fc2f1d8749e1441bc397d7fdf41cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
+  moveSpeed: 1
   rayCastXOffset: -0.1
   rayCastYOffset: 0.5
   towerLayer:
