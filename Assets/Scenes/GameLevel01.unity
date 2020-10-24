@@ -2688,7 +2688,7 @@ MonoBehaviour:
   - {fileID: 1946592575}
   - {fileID: 381737253}
   - {fileID: 2079066422}
-  firstSpawnTime: 0
+  firstSpawnTime: 10
   minSpawnTime: 3
   maxSpawnTime: 7
   spawnPointXOffset: 2
@@ -6276,7 +6276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 60
+  m_text: 80
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7706,7 +7706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42893034134d924281c59e63d6423cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 60
+  startTime: 80
 --- !u!1 &1588066685156029
 GameObject:
   m_ObjectHideFlags: 0
